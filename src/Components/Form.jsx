@@ -16,18 +16,14 @@ const Form = () => {
     const inputRef = useRef();
     const noteRef = useRef({});
     const [isInputEmpty, setInputEmpty] = useState(false);
+    //const [buttonPressed, setButtonPressed] = useState(false);
 
     const handleSubmit = e => {
         e.preventDefault();
+        //setButtonPressed(true);
         addTodo(newTodo);
         clearInput();
         inputRef.current.focus();
-    };
-
-    const preventSubmit = e => {
-        if (e.key === 'Enter') {
-            e.preventDefault();
-        }
     };
 
     const addTodo = text => {
@@ -94,13 +90,12 @@ const Form = () => {
                         onChange={e => setTodo(e.target.value)}
                         onFocus={clearInput}
                         ref={inputRef}
-                        //onKeyPress={preventSubmit}
+                        className={isInputEmpty ? 'input-error' : ''}
                     />
                 </div>
                 <button
                     type="submit"
                     className="button"
-                    //onKeyPress={preventSubmit}
                 >
                     +
                 </button>
@@ -129,7 +124,6 @@ const Form = () => {
                                     className="form__edit-input"
                                     defaultValue={todo.text}
                                     ref={element => (noteRef.current[inx] = element)}
-                                    //onKeyPress={preventSubmit}
                                     id={`task-${inx}`}
                                     autofocus
                                 />
@@ -138,10 +132,10 @@ const Form = () => {
                                 </button>
                             </div>
                         )}
-                        <button className='editButton' onClick={() => editTodo(inx)} aria-label="edit">
+                        <button type="button" className='editButton' onClick={() => editTodo(inx)} aria-label="edit">
                             <AiTwotoneEdit />
                         </button>
-                        <button className='deleteButton' onClick={() => removeTodo(inx)} aria-label="delete">
+                        <button type="button" className='deleteButton' onClick={() => removeTodo(inx)} aria-label="delete">
                             <AiFillDelete />
                         </button>
                     </div>

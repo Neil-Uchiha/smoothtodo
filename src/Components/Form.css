@@ -33,6 +33,7 @@ input[type="checkbox"] {
     margin-right: 20px;
 }
 
+
 .label {
     margin-bottom: 8px;
     font-weight: bold;
@@ -50,9 +51,9 @@ input[type="text"] {
     color: rgb(199, 236, 247);
 }
 
-input[type="text"]:empty:focus::placeholder {
+/*input[type="text"]:empty:focus::placeholder {
     color: red;
-}
+}*/
 
 
 .button {
@@ -192,4 +193,8 @@ input[type="text"]:empty:focus::placeholder {
 button {
     cursor: pointer;
     margin-left: 8px;
+}
+
+.input-error::placeholder {
+    color: red;
 }
