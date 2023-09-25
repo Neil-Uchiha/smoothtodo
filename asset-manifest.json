@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/smoothtodo/static/css/main.71b01aa2.css",
-    "main.js": "/smoothtodo/static/js/main.6047617e.js",
+    "main.css": "/smoothtodo/static/css/main.1dd64176.css",
+    "main.js": "/smoothtodo/static/js/main.15dd43fc.js",
     "static/js/787.150ddce5.chunk.js": "/smoothtodo/static/js/787.150ddce5.chunk.js",
     "static/media/roboto-all-400-normal.woff": "/smoothtodo/static/media/roboto-all-400-normal.b5a0a0df312d3423493b.woff",
     "static/media/roboto-latin-400-normal.woff2": "/smoothtodo/static/media/roboto-latin-400-normal.176f8f5bd5f02b3abfcf.woff2",
@@ -12,12 +12,12 @@
     "static/media/roboto-vietnamese-400-normal.woff2": "/smoothtodo/static/media/roboto-vietnamese-400-normal.52cebac009baf5592e7d.woff2",
     "static/media/roboto-greek-ext-400-normal.woff2": "/smoothtodo/static/media/roboto-greek-ext-400-normal.bc7ace6e50c7d9d4d959.woff2",
     "index.html": "/smoothtodo/index.html",
-    "main.71b01aa2.css.map": "/smoothtodo/static/css/main.71b01aa2.css.map",
-    "main.6047617e.js.map": "/smoothtodo/static/js/main.6047617e.js.map",
+    "main.1dd64176.css.map": "/smoothtodo/static/css/main.1dd64176.css.map",
+    "main.15dd43fc.js.map": "/smoothtodo/static/js/main.15dd43fc.js.map",
     "787.150ddce5.chunk.js.map": "/smoothtodo/static/js/787.150ddce5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.71b01aa2.css",
-    "static/js/main.6047617e.js"
+    "static/css/main.1dd64176.css",
+    "static/js/main.15dd43fc.js"
   ]
 }
