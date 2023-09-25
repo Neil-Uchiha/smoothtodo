@@ -82,7 +82,7 @@ const Form = () => {
             <div className="form__input">
                 <div className="form-control">
                     <label htmlFor="task" className="label">
-                        What's need to be done?
+                        What is needed to be done?
                     </label>
                     <input
                         type="text"
@@ -94,13 +94,13 @@ const Form = () => {
                         onChange={e => setTodo(e.target.value)}
                         onFocus={clearInput}
                         ref={inputRef}
-                        onKeyPress={preventSubmit}
+                        //onKeyPress={preventSubmit}
                     />
                 </div>
                 <button
                     type="submit"
                     className="button"
-                    onKeyPress={preventSubmit}
+                    //onKeyPress={preventSubmit}
                 >
                     +
                 </button>
@@ -129,7 +129,7 @@ const Form = () => {
                                     className="form__edit-input"
                                     defaultValue={todo.text}
                                     ref={element => (noteRef.current[inx] = element)}
-                                    onKeyPress={preventSubmit}
+                                    //onKeyPress={preventSubmit}
                                     id={`task-${inx}`}
                                     autofocus
                                 />
